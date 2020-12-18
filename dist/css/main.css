@@ -1,0 +1,596 @@
+/*! teste-dot v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/* line 1, src/sass/components/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* line 7, src/sass/components/_base.scss */
+body {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  background-color: #454545;
+}
+
+/* line 12, src/sass/components/_base.scss */
+body,
+input,
+button {
+  font-size: 16px;
+  font-family: "Roboto", serif;
+}
+
+/* line 18, src/sass/components/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong {
+  font-weight: 500;
+  font-family: "Roboto", serif;
+}
+
+/* line 29, src/sass/components/_base.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 1, src/sass/components/_header.scss */
+header {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 4, src/sass/components/_header.scss */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* line 10, src/sass/components/_header.scss */
+header nav h1 {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 16, src/sass/components/_header.scss */
+header nav p {
+  max-width: 250px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 21, src/sass/components/_header.scss */
+header nav div {
+  display: flex;
+  justify-content: center;
+  height: 0;
+}
+
+/* line 25, src/sass/components/_header.scss */
+header nav div a {
+  position: relative;
+  top: 10px;
+}
+
+/* line 28, src/sass/components/_header.scss */
+header nav div a span {
+  font-size: 48px !important;
+  color: #333;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  /* line 1, src/sass/components/_header.scss */
+  header {
+    position: relative;
+  }
+  /* line 38, src/sass/components/_header.scss */
+  header nav {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 310px);
+    z-index: 5;
+  }
+  /* line 43, src/sass/components/_header.scss */
+  header nav h1 {
+    font-size: 60px;
+    color: #546130;
+    font-weight: bold;
+  }
+  /* line 48, src/sass/components/_header.scss */
+  header nav p {
+    font-size: 24px;
+    color: #546130;
+    font-weight: bold;
+    max-width: 620px;
+  }
+  /* line 55, src/sass/components/_header.scss */
+  header nav div a {
+    top: 6px;
+  }
+}
+
+/* line 64, src/sass/components/_header.scss */
+.swiper-container .img-slider {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 220px;
+}
+
+/* line 69, src/sass/components/_header.scss */
+.swiper-container .swiper-pagination {
+  background: rgba(25, 25, 25, 0.6);
+  bottom: 0;
+  padding: 10px 5px;
+}
+
+/* line 74, src/sass/components/_header.scss */
+.swiper-container .swiper-pagination-bullet {
+  bottom: 0;
+  background-color: #fff;
+  border: 3px solid #444;
+  height: 16px;
+  width: 16px;
+  opacity: 1;
+}
+
+/* line 82, src/sass/components/_header.scss */
+.swiper-container .swiper-pagination-bullet-active {
+  border-color: #fff;
+  background-color: #546130;
+}
+
+@media (min-width: 800px) {
+  /* line 88, src/sass/components/_header.scss */
+  .swiper-container .img-slider {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 550px;
+  }
+}
+
+/* line 1, src/sass/components/_section-one.scss */
+.section-one {
+  width: 90%;
+  margin: 16px auto;
+}
+
+@media (min-width: 800px) {
+  /* line 1, src/sass/components/_section-one.scss */
+  .section-one {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+/* line 8, src/sass/components/_section-one.scss */
+.section-one .content-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, src/sass/components/_section-one.scss */
+.section-one .content-slider .img-slider {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 220px;
+  border: 10px solid #6f6f6f;
+}
+
+/* line 19, src/sass/components/_section-one.scss */
+.section-one .content-slider h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* line 24, src/sass/components/_section-one.scss */
+.section-one .content-slider p {
+  font-size: 19px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+/* line 31, src/sass/components/_section-one.scss */
+.section-one .button-prev-desk,
+.section-one .button-next-desk {
+  display: none;
+}
+
+/* line 36, src/sass/components/_section-one.scss */
+.section-one .navigation-wrapper {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* line 42, src/sass/components/_section-one.scss */
+.section-one .navigation-wrapper span {
+  font-size: 36px;
+}
+
+/* line 45, src/sass/components/_section-one.scss */
+.section-one .navigation-wrapper .button-next {
+  margin: 0 20px;
+}
+
+@media (min-width: 800px) {
+  /* line 1, src/sass/components/_section-one.scss */
+  .section-one {
+    position: relative;
+    padding: 60px 0;
+  }
+  /* line 53, src/sass/components/_section-one.scss */
+  .section-one .button-prev-desk,
+  .section-one .button-next-desk {
+    display: initial;
+    position: absolute;
+    top: 28%;
+    left: 0px;
+    z-index: 20;
+    cursor: pointer;
+    font-size: 48px;
+  }
+  /* line 63, src/sass/components/_section-one.scss */
+  .section-one .button-next-desk {
+    left: initial;
+    right: 0px;
+  }
+  /* line 68, src/sass/components/_section-one.scss */
+  .section-one .navigation-wrapper {
+    display: none;
+  }
+}
+
+/* line 1, src/sass/components/_section-two.scss */
+.section-two {
+  background: #6f6f6f;
+  padding: 16px 0;
+}
+
+/* line 6, src/sass/components/_section-two.scss */
+.section-two-content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 11, src/sass/components/_section-two.scss */
+.section-two-content img {
+  width: 275px;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 13px solid #343434;
+}
+
+/* line 18, src/sass/components/_section-two.scss */
+.section-two-content h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+/* line 24, src/sass/components/_section-two.scss */
+.section-two-content p {
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+/* line 28, src/sass/components/_section-two.scss */
+.section-two-content p.boldText {
+  font-weight: bold;
+}
+
+/* line 31, src/sass/components/_section-two.scss */
+.section-two-content p.italicText {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  /* line 6, src/sass/components/_section-two.scss */
+  .section-two-content {
+    max-width: 88%;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+  /* line 43, src/sass/components/_section-two.scss */
+  .section-two-content img {
+    width: 430px;
+    height: 430px;
+  }
+  /* line 47, src/sass/components/_section-two.scss */
+  .section-two-content div {
+    padding: 0 15px;
+    max-width: 60%;
+  }
+}
+
+/* line 1, src/sass/components/_section-three.scss */
+.section-three {
+  background: #bebebe;
+  padding: 60px 0px;
+}
+
+/* line 5, src/sass/components/_section-three.scss */
+.section-three div:first-of-type button {
+  border-radius: 8px 8px 0 0;
+}
+
+/* line 10, src/sass/components/_section-three.scss */
+.section-three div:last-of-type button {
+  border: none;
+}
+
+/* line 13, src/sass/components/_section-three.scss */
+.section-three div:last-of-type div {
+  border-radius: 0 0 8px 8px;
+}
+
+/* line 1, src/sass/components/_footer.scss */
+footer {
+  background-color: #6f6f6f;
+  position: relative;
+}
+
+/* line 4, src/sass/components/_footer.scss */
+footer .custom-shape-divider-top-1608323797 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+/* line 14, src/sass/components/_footer.scss */
+footer .custom-shape-divider-top-1608323797 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+  transform: rotateY(180deg);
+}
+
+/* line 22, src/sass/components/_footer.scss */
+footer .custom-shape-divider-top-1608323797 .shape-fill {
+  fill: #434343;
+}
+
+/* line 26, src/sass/components/_footer.scss */
+footer form {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+/* line 33, src/sass/components/_footer.scss */
+footer form .two-items-wrapper {
+  display: block;
+  background: none;
+  padding: 0;
+}
+
+/* line 38, src/sass/components/_footer.scss */
+footer form div {
+  background-color: #bebebe;
+  margin-bottom: 8px;
+  padding: 16px 10px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+/* line 46, src/sass/components/_footer.scss */
+footer form div label {
+  color: #333333;
+  font-weight: bold;
+  margin-right: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: start;
+}
+
+/* line 54, src/sass/components/_footer.scss */
+footer form input,
+footer form textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  flex: 1;
+}
+
+/* line 61, src/sass/components/_footer.scss */
+footer form .textarea-wrapper {
+  flex-direction: column;
+}
+
+/* line 63, src/sass/components/_footer.scss */
+footer form .textarea-wrapper textarea {
+  margin-top: 8px;
+}
+
+/* line 68, src/sass/components/_footer.scss */
+footer form button {
+  color: #333;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px 36px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border: none;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  /* line 26, src/sass/components/_footer.scss */
+  footer form {
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 30px 0px;
+  }
+  /* line 86, src/sass/components/_footer.scss */
+  footer form .two-items-wrapper {
+    display: flex;
+  }
+  /* line 88, src/sass/components/_footer.scss */
+  footer form .two-items-wrapper div:first-of-type {
+    margin-right: 20px;
+    flex: 1;
+  }
+}
+
+/* line 96, src/sass/components/_footer.scss */
+footer .bottom-area {
+  position: relative;
+  background-color: #343434;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 1, src/sass/components/_accordion.scss */
+.accordion-container {
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+/* line 4, src/sass/components/_accordion.scss */
+.accordion-container .accordion {
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 100%;
+  transition: background-color 0.6s ease;
+  border-bottom: 1px solid #fff;
+  background-color: #6f6f6f;
+  color: #fff;
+}
+
+/* line 17, src/sass/components/_accordion.scss */
+.accordion-container .accordion.active-accordion {
+  background-color: #fff;
+  color: #6f6f6f;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 24, src/sass/components/_accordion.scss */
+.accordion-container .accordion-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 29, src/sass/components/_accordion.scss */
+.accordion-container .accordion-icon {
+  margin-left: auto;
+  transition: transform 0.4s ease;
+  font-size: 36px;
+}
+
+/* line 35, src/sass/components/_accordion.scss */
+.accordion-container .accordion-content {
+  background-color: #fff;
+  overflow: hidden;
+  color: #6f6f6f;
+  padding: 0 18px;
+  height: 0;
+}
+
+/* line 42, src/sass/components/_accordion.scss */
+.accordion-container .accordion-content img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 12px solid #6f6f6f;
+  margin-top: 16px;
+}
+
+/* line 49, src/sass/components/_accordion.scss */
+.accordion-container .accordion-content.active {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* line 54, src/sass/components/_accordion.scss */
+.accordion-container .rotate {
+  transform: rotate(180deg);
+}
+
+/* line 58, src/sass/components/_accordion.scss */
+.accordion-container .accordion-text {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  /* line 66, src/sass/components/_accordion.scss */
+  .accordion-container {
+    width: 88%;
+    margin: 0 auto;
+  }
+  /* line 70, src/sass/components/_accordion.scss */
+  .accordion-container .accordion-content {
+    max-height: 100%;
+    padding: 0 24px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
+  /* line 76, src/sass/components/_accordion.scss */
+  .accordion-container .accordion-content img {
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 24px;
+  }
+  /* line 81, src/sass/components/_accordion.scss */
+  .accordion-container .accordion-content .accordion-text {
+    align-self: center;
+    margin: 24px 0;
+    text-align: left;
+    max-width: 660px;
+    padding: 10px;
+  }
+}
